@@ -13,7 +13,8 @@
 	<parent>
 		<groupId>com.test</groupId>
 		<artifactId>springCloud</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
+		<relativePath>../springCloud/pom.xml</relativePath>
 	</parent>
 
 
@@ -41,21 +42,24 @@
 			<version>2.0.1.RELEASE</version>
 		</dependency>
 
-		
+
 	</dependencies>
-
-
-
-
-
 
 	<build>
 		<plugins>
+
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
 			</plugin>
+
 		</plugins>
+
+
 	</build>
 
 
